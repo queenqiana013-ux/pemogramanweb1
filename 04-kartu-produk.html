@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>04 - Kartu Produk - Sebelum</title>
+</head>
+<body>
+    <!-- 
+    INSTRUKSI PENGERJAAN:
+    1. Bungkus konten ke dalam kartu dengan class ".product-card" berukuran lebar ~280px.
+    2. Beri styling pada kartu (border atau shadow, border-radius, overflow: hidden agar gambar tidak keluar batas melengkung).
+    3. Buat gambar (img) responsif dengan max-width: 100% dan hilangkan margin bawah bawaan gambar (display: block).
+    4. Beri padding pada area teks di bawah gambar.
+    5. Styling harga agar mencolok (warna merah/oranye, font-weight tebal, ukuran lebih besar).
+    6. Tombol "Beli Sekarang": width 100%, background warna, warna teks putih, hilangkan border, padding, cursor pointer.
+    -->
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>04 - Kartu Produk</title>
+
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Kartu produk */
+        .product-card {
+            width: 280px;
+            margin: 50px auto;
+
+            border: 1px solid #ddd;
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            background-color: white;
+
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Gambar produk */
+        .product-card img {
+            width: 100%;
+            max-width: 100%;
+
+            display: block;
+        }
+
+        /* Bagian informasi produk */
+        .product-info {
+            padding: 20px;
+        }
+
+        /* Nama produk */
+        .product-info h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        /* Harga */
+        .product-info .price {
+            color: orange;
+            font-weight: bold;
+            font-size: 20px;
+
+            margin-bottom: 15px;
+        }
+
+        /* Tombol */
+        .product-info button {
+            width: 100%;
+
+            padding: 12px;
+
+            background-color: orange;
+            color: white;
+
+            border: none;
+            border-radius: 5px;
+
+            cursor: pointer;
+        }
+
+        /* Hover tombol */
+        .product-info button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="product-card">
+
+        <img 
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80"
+            alt="Sepatu Lari"
+        >
+
+        <div class="product-info">
+
+            <h3>Sepatu Lari queen</h3>
+
+            <p class="price">Rp 350.000</p>
+
+            <p>
+                Sepatu nyaman dan ringan untuk digunakan
+                saat berolahraga.
+            </p>
+
+            <br>
+
+            <button>Beli Sekarang</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+    
+   

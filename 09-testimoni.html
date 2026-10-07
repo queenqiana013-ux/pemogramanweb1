@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>09 - Testimoni - Sebelum</title>
+</head>
+<body>
+    <!-- 
+    INSTRUKSI PENGERJAAN:
+    1. Atur container ".testimonial-grid" menggunakan CSS Grid. Gunakan grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) dan beri gap.
+    2. Berikan gaya pada kartu (background, padding, border-radius, shadow ringan).
+    3. Buat posisi kartu menjadi "position: relative". 
+    4. Gunakan pseudo-element "::before" pada kartu untuk menambahkan karakter tanda kutip besar (content: '"') di pojok kiri atas sebagai watermark (ukuran sangat besar, warna sangat pudar, z-index rendah).
+    5. Rapikan elemen gambar profil dan nama (bisa menggunakan flexbox untuk menjejerkannya secara horizontal).
+    -->
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>09 - Testimoni</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 50px 20px;
+        }
+
+        /* Container Testimoni */
+        .testimonial-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        /* Kartu */
+        .card {
+            position: relative;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Tanda kutip besar */
+        .card::before {
+            content: "“";
+            position: absolute;
+            top: 5px;
+            left: 15px;
+
+            font-size: 70px;
+            font-weight: bold;
+            color: #007bff;
+            line-height: 1;
+        }
+
+        /* Isi testimoni */
+        .card p {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Bagian author */
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* Foto */
+        .author img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Nama */
+        .author h4 {
+            margin-bottom: 5px;
+            color: #222;
+        }
+
+        .author span {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Responsive tablet */
+        @media (max-width: 900px) {
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Responsive HP */
+        @media (max-width: 600px) {
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="testimonial-grid">
+
+        <!-- Testimoni 1 -->
+        <div class="card">
+            <p>
+                Pelayanan luar biasa, website saya jadi lebih cepat
+                dan menarik. Sangat puas dengan hasilnya!
+            </p>
+
+            <div class="author">
+                <img src="https://i.pravatar.cc/100?img=12" alt="Andi Wijaya">
+
+                <div>
+                    <h4>Andhika pratama</h4>
+                    <span>Pengusaha</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimoni 2 -->
+        <div class="card">
+            <p>
+                Timnya sangat profesional dan responsif.
+                Semua kebutuhan website saya dapat diselesaikan
+                dengan baik.
+            </p>
+
+            <div class="author">
+                <img src="https://i.pravatar.cc/100?img=32" alt="Siti Rahma">
+
+                <div>
+                    <h4>bella hadid</h4>
+                    <span>Digital Marketer</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimoni 3 -->
+        <div class="card">
+            <p>
+                Desainnya modern, sederhana, dan mudah digunakan.
+                Saya sangat merekomendasikan layanan ini.
+            </p>
+
+            <div class="author">
+                <img src="https://i.pravatar.cc/100?img=56" alt="Budi Santoso">
+
+                <div>
+                    <h4>ahmad riszki</h4>
+                    <span>Web Developer</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+    
+</body>
+</html>

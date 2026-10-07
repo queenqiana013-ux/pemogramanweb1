@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>01 - Kartu Profil - Sebelum</title>
+</head>
+<body>
+    <!-- 
+    INSTRUKSI PENGERJAAN (TO-DO LIST):
+    1. Tambahkan CSS reset dasar (margin: 0, padding: 0, box-sizing: border-box).
+    2. Atur body agar konten berada di tengah layar (gunakan Flexbox, min-height: 100vh, background warna abu-abu terang).
+    3. Bungkus elemen di bawah ke dalam class ".profile-card".
+    4. Beri ".profile-card" background putih, lebar sekitar 300px, padding, border-radius (misal 15px), text-align center, dan box-shadow halus.
+    5. Atur gambar (img) agar lebarnya misal 100px, height 100px, object-fit cover, dan border-radius 50% (lingkaran sempurna).
+    6. Hilangkan garis bawah pada link <a> (text-decoration: none), beri warna background, padding, border-radius, dan ubah display menjadi inline-block.
+    7. Beri efek hover pada link <a> agar warnanya sedikit berubah saat kursor diarahkan.
+    -->
+        
+        <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Profil</title>
+
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Tampilan halaman */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Kartu profil */
+        .profile-card {
+            width: 300px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 15px;
+            text-align: center;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Foto profil */
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        /* Nama */
+        .profile-card h2 {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        /* Pekerjaan */
+        .profile-card p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        /* Link */
+        .profile-card a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        /* Efek hover */
+        .profile-card a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <img 
+            src="https://ui-avatars.com/api/?name=Queen+Noor+Latifah&size=150"
+            alt="Foto Queen Noor Latifah"
+        >
+
+        <h2>Queen Noor Latifah</h2>
+        <p>Web Developer</p>
+        <a href="#">Hubungi Saya</a>
+
+    </div>
+
+</body>
+</html>
+    
+</body>
+</html>

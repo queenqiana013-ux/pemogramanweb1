@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>07 - Artikel Blog - Sebelum</title>
+</head>
+<body>
+    <!-- 
+    INSTRUKSI PENGERJAAN:
+    1. Atur <article> agar lebar maksimal (max-width) sekitar 700px dan posisikan di tengah layar (margin: 0 auto), beri padding.
+    2. Ubah font-family agar lebih modern, perbesar ukuran font pada paragraf (misal 18px), dan perlebar line-height (misal 1.6) agar nyaman dibaca.
+    3. Gunakan pseudo-element "p::first-letter" pada paragraf pertama untuk membuat efek Drop Cap (huruf kapital besar di awal teks).
+    4. Buat styling untuk <blockquote>: beri background warna lembut, border kiri yang tebal dengan warna mencolok, padding, font miring (italic).
+    -->
+        <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>07 - Artikel Blog</title>
+
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        /* Artikel */
+        article {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Judul */
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #222;
+        }
+
+        /* Paragraf */
+        p {
+            margin-bottom: 18px;
+            font-size: 16px;
+        }
+
+        /* Paragraf pertama */
+        p:first-of-type::first-letter {
+            font-size: 48px;
+            font-weight: bold;
+            float: left;
+            line-height: 0.8;
+            margin-right: 8px;
+            color: #007bff;
+        }
+
+        /* Blockquote */
+        blockquote {
+            margin: 25px 0;
+            padding: 15px 20px;
+            background-color: #f0f8ff;
+            border-left: 6px solid #007bff;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            article {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <article>
+
+        <h1>Rahasia Belajar CSS dengan Cepat</h1>
+
+        <p class="intro">
+            Belajar CSS seringkali terasa membingungkan bagi pemula karena banyaknya
+            properti dan aturan yang harus dipahami. Namun, jika dipelajari secara
+            bertahap, CSS sebenarnya cukup mudah dan menyenangkan.
+        </p>
+
+        <p>
+            Banyak developer yang terjebak dalam kebiasaan copy-paste tanpa tahu
+            maksud kode yang mereka gunakan. Sebaiknya pahami terlebih dahulu fungsi
+            setiap properti CSS agar kita dapat membuat desain website dengan lebih baik.
+        </p>
+
+        <blockquote>
+            "Kunci belajar CSS bukan menghafal semua properti, tetapi memahami
+            bagaimana setiap properti bekerja."
+        </blockquote>
+
+        <p>
+            Mulailah dengan mempelajari konsep dasar seperti warna, ukuran,
+            margin, padding, display, position, Flexbox, dan Grid. Setelah memahami
+            dasar tersebut, kita dapat membuat tampilan website yang lebih menarik.
+        </p>
+
+        <p>
+            Jangan takut untuk mencoba berbagai kombinasi CSS. Semakin sering
+            berlatih, semakin mudah bagi kita untuk memahami bagaimana sebuah
+            halaman website dapat dibuat menjadi lebih rapi dan responsif.
+        </p>
+
+    </article>
+
+</body>
+</html>
+    
+</body>
+</html>
